@@ -58,10 +58,13 @@ public class NameGenerator {
                     }
                 }
             }
+            
+            // clean up the list
             HashSet hs = new HashSet();
             hs.addAll(words);
             words.clear();
             words.addAll(hs);
+            words.sort(null);
 
             //String str = "Puppy kitten lion tiger lamb power fun rythm love you her him positive emotion sweet find get go higher strong faster new safe strong";
             System.out.println("Input words: " + words.size() + " from " + CSV_FILE);
